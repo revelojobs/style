@@ -1,0 +1,9 @@
+{
+  "name": "style",
+  "version": "1.0.0",
+  "description": "The amazing Revelo's styleguide",
+  "main": "index.js",
+  "repository": "https://github.com/revelojobs/style",
+  "author": "Revelo Devs <devs@rvlo.io>",
+  "license": "MIT"
+}

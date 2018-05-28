@@ -1,0 +1,30 @@
+.button {
+  background-color: transparent;
+  border: 0;
+  color: $color_fiord;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: background-color .1s ease-in-out, color .1s ease-in-out;
+
+  &:hover {
+    background-color: $color_fiord;
+    color: $color_plain_white;
+  }
+
+  &--primary {
+    background-color: $color_flamingo;
+    color: $color_plain_white;
+
+    &:hover {
+      background-color: $color_bittersweet;
+    }
+  }
+
+  &--disabled,
+  &:disabled {
+    background-color: inherit;
+    color: inherit;
+    cursor: no-drop;
+    opacity: .4;
+  }
+}

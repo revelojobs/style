@@ -1,0 +1,6 @@
+.html,
+.body {
+  &--disabled-scroll {
+    overflow-y: hidden;
+  }
+}

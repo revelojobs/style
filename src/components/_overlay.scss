@@ -1,0 +1,16 @@
+.overlay {
+  align-items: center;
+  background: rgba($color_shuttle_gray, .95);
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999999999;
+
+  &--active {
+    display: flex;
+  }
+}
