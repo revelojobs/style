@@ -5,5 +5,15 @@
   "main": "index.js",
   "repository": "https://github.com/revelojobs/style",
   "author": "Revelo Devs <devs@rvlo.io>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^4.0.1",
+    "run-sequence": "^2.2.1"
+  }
 }
