@@ -1,11 +1,20 @@
 const gulp = require('gulp');
-const runSequence = require('run-sequence');
+const svgmin = require('gulp-svgmin');
+const sassInlineSvg = require('gulp-sass-inline-svg');
 const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
-const imagemin = require('gulp-imagemin');
 const liveReload = require('gulp-livereload');
 const browserSync = require('browser-sync');
+const runSequence = require('run-sequence');
+
+gulp.task('svg', function(){
+  return gulp.src('./src/icons/**/*.svg') 
+    .pipe(svgmin())
+    .pipe(sassInlineSvg({
+      destDir: './src/stylesheets/vendor'
+    }));
+});
 
 gulp.task('styles', () => {
   return gulp.src('./src/stylesheets/main.scss')
@@ -31,36 +40,29 @@ gulp.task('style-helpers', () => {
   });
 });
 
-gulp.task('images', () => {
-  return gulp.src('./src/images/**/*')
-		.pipe(imagemin())
-		.pipe(gulp.dest('./dist/images'))
-});
+// gulp.task('watch', () => {
+//   liveReload.listen();
 
-gulp.task('watch', () => {
-  liveReload.listen();
+//   gulp.watch('./src/stylesheets/**/*', ['styles']);
+// });
 
-  gulp.watch('./src/stylesheets/**/*', ['styles']);
-  gulp.watch('./src/images/**/*',      ['images']);
-});
+// gulp.task('serve', ['styles'], () => {
+//   const browserSyncInstance = browserSync.create();
 
-gulp.task('serve', ['styles'], () => {
-  const browserSyncInstance = browserSync.create();
+//   browserSyncInstance.init({
+//     port: 8000,
+//     server: {
+//       baseDir: './dist'
+//     }
+//   });
 
-  browserSyncInstance.init({
-    port: 8000,
-    server: {
-      baseDir: './dist'
-    }
-  });
+//   gulp.watch('./dist/**/*').on('change', browserSyncInstance.reload);
+// });
 
-  gulp.watch('./dist/**/*').on('change', browserSyncInstance.reload);
-});
+// gulp.task('development', () => {
+//   runSequence('svg', 'styles', 'images', 'serve', 'watch');
+// });
 
 gulp.task('default', () => {
-  runSequence('styles', 'images', 'serve', 'watch');
-});
-
-gulp.task('build', () => {
-  runSequence('styles', 'images', 'minify-styles', 'style-helpers');
+  runSequence('svg', 'styles', 'minify-styles', 'style-helpers');
 });
