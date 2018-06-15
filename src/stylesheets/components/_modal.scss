@@ -64,7 +64,7 @@
 
     &::after {
       background-color: $color_viking;
-      background-image: image-url('employers/candidates/modals/welcome/checked.svg');
+      background-image: inline-svg('checked');
       background-position: center;
       background-repeat: no-repeat;
       bottom: 0;

@@ -1,7 +1,11 @@
+@import 'vendor/sass-inline-svg';
+
 @import 'variables/colors';
 
 @import 'common/base';
 
+@import 'components/alert';
 @import 'components/button';
 @import 'components/modal';
+@import 'components/list';
 @import 'components/overlay';

@@ -1,0 +1,4 @@
+@function checked($fillcolor, $strokecolor){ @return "data:image/svg+xml, %3Csvg width='20' height='15' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.533 0L6.597 12.043 1.465 6.867 0 8.345 6.596 15h.001L20 1.479 18.535 0z' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E";}
+
+
+$svg-map: ('checked': ('name': 'checked', 'folder': 'icons'),);

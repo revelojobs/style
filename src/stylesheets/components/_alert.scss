@@ -1,0 +1,17 @@
+.alert {
+  background-color: $color_porcelain;
+  font-weight: 500;
+  padding: 8px 16px;
+
+  &--info {
+    color: $color_scooter;
+  }
+
+  &--careful {
+    color: $color_heliotrope;
+  }
+
+  &--fluid {
+    width: 100%;
+  }
+}
