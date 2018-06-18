@@ -1,6 +1,6 @@
 {
-  "name": "style",
-  "version": "1.0.0",
+  "name": "@revelojobs/style",
+  "version": "0.0.0",
   "description": "The amazing Revelo's styleguide",
   "main": "index.js",
   "repository": "https://github.com/revelojobs/style",
