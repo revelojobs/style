@@ -75,20 +75,6 @@ Types of buttons:
     cursor: no-drop;
     opacity: .4; }
 
-/*
----
-name: Header
-category: Components
----
-
-Header is a simple component that is always on top of the page.
-
-```types.html
-<header class="header">
-  <img src="/images/header-logo.png" alt="Revelo Logo">
-</header>
-```
-*/
 .header {
   background-color: #fff;
   padding: 20px;

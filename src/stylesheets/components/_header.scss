@@ -1,0 +1,20 @@
+/*
+---
+name: Header
+category: Components
+---
+
+Header is a simple component that is always on top of the page.
+
+```types.html
+<header class="header">
+  <img src="/images/header-logo.png" alt="Revelo Logo">
+</header>
+```
+*/
+
+.header {
+  background-color: $color_plain_white;
+  padding: 20px;
+  width: 100%;
+}

@@ -24,6 +24,7 @@
 							<optgroup label="Components">
 									<option value="alert">Alert</option>
 									<option value="button">Button</option>
+									<option value="header">Header</option>
 							</optgroup>
 					</select>
 				</form>
@@ -33,7 +34,7 @@
 						<div id="alert" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Alert</h1>
 	<div class="theme-content-element-description"><p>Alerts can be used with <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags to encapsulate alerts.</p>
-<p>Types of buttons:</p>
+<p>Types of alerts:</p>
 <ul>
 <li>Default: Commonly not used.</li>
 <li>Info: Alert for infos</li>
@@ -129,6 +130,49 @@
 </div></div>
 </div>
 
+						<div id="header" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Header</h1>
+	<div class="theme-content-element-description"><p>Header is a <code>&lt;div&gt;</code> component that is always on top of the page.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="header-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="header-types.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;header class=&quot;header&quot;&gt;
+  &lt;img src=&quot;/images/header-logo.png&quot; alt=&quot;Revelo Logo&quot;&gt;
+&lt;/header&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;header class=&quot;header&quot;&gt;
+  &lt;img src=&quot;/images/header-logo.png&quot; alt=&quot;Revelo Logo&quot;&gt;
+&lt;/header&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 				</div>
 		</div>
 		<div
@@ -154,7 +198,7 @@
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Alert  Button "
+							data-filter-value=" Alert  Button  Header "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -175,6 +219,13 @@
 									data-filter-value="Button"
 								>
 									<span>Button</span>
+								</a>
+								<a
+									href="#header"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Header"
+								>
+									<span>Header</span>
 								</a>
 						</div>
 			
