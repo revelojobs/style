@@ -84,10 +84,18 @@ category: Components
 
 Card is a simple component.
 
-You can use the `--fluid` modifier that adds `width: 100%`.
+You can use the following modifiers:
+- `--dashed`: adds `border-style: dashed`.
+- `--fluid`: adds `width: 100%`.
 
 ```types.html
 <div class="card">
+  Pra chegar ao next level você precisa de comprometimento e muito hardwork.
+  Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
+  vai all-in.
+</div>
+
+<div class="card card--dashed">
   Pra chegar ao next level você precisa de comprometimento e muito hardwork.
   Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
   vai all-in.
@@ -100,6 +108,8 @@ You can use the `--fluid` modifier that adds `width: 100%`.
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 30px; }
+  .card--dashed {
+    border-style: dashed; }
   .card--fluid {
     width: 100%; }
 
