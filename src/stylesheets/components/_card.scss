@@ -9,6 +9,7 @@ Card is a simple component.
 You can use the following modifiers:
 - `--dashed`: adds `border-style: dashed`.
 - `--fluid`: adds `width: 100%`.
+- `--ghost`: adds lightweight description to card.
 
 ```types.html
 <div class="card">
@@ -18,9 +19,13 @@ You can use the following modifiers:
 </div>
 
 <div class="card card--dashed">
-  Pra chegar ao next level você precisa de comprometimento e muito hardwork.
-  Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
-  vai all-in.
+Pra chegar ao next level você precisa de comprometimento e muito hardwork.
+Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
+vai all-in.
+</div>
+
+<div class="card card--ghost">
+  A definição dos termos técnicos aparecerá aqui. Adicione um texto no campo acima para traduzir!
 </div>
 ```
 */
@@ -37,5 +42,11 @@ You can use the following modifiers:
 
   &--fluid {
     width: 100%;
+  }
+
+  &--ghost {
+    color: $color_regent_gray;
+    padding: 60px 30px;
+    text-align: center;
   }
 }

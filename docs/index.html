@@ -25,6 +25,7 @@
 									<option value="alert">Alert</option>
 									<option value="button">Button</option>
 									<option value="cards">Cards</option>
+									<option value="form">Form</option>
 									<option value="header">Header</option>
 									<option value="page-banner">Page Banner</option>
 							</optgroup>
@@ -177,9 +178,13 @@
 &lt;/div&gt;
 
 &lt;div class=&quot;card card--dashed&quot;&gt;
-  Pra chegar ao next level você precisa de comprometimento e muito hardwork.
-  Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
-  vai all-in.
+Pra chegar ao next level você precisa de comprometimento e muito hardwork.
+Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
+vai all-in.
+&lt;/div&gt;
+
+&lt;div class=&quot;card card--featured&quot;&gt;
+  A definição dos termos técnicos aparecerá aqui. Adicione um texto no campo acima para traduzir!
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;card&quot;&gt;
   Pra chegar ao next level você precisa de comprometimento e muito hardwork.
@@ -188,9 +193,68 @@
 &lt;/div&gt;
 
 &lt;div class=&quot;card card--dashed&quot;&gt;
-  Pra chegar ao next level você precisa de comprometimento e muito hardwork.
-  Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
-  vai all-in.
+Pra chegar ao next level você precisa de comprometimento e muito hardwork.
+Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
+vai all-in.
+&lt;/div&gt;
+
+&lt;div class=&quot;card card--featured&quot;&gt;
+  A definição dos termos técnicos aparecerá aqui. Adicione um texto no campo acima para traduzir!
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="form" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Form</h1>
+	<div class="theme-content-element-description"><p>Form is a group of components, including <code>__field</code>, <code>__label</code>, <code>__input</code> sub-components.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="form-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="form-types.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;form__field&quot;&gt;
+  &lt;label for=&quot;name&quot; class=&quot;form__label&quot;&gt;Nome de usuário&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;name&quot; placeholder=&quot;ex. João da Silva&quot; class=&quot;form__input space__16&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form__field space__20&quot;&gt;
+  &lt;label for=&quot;textao&quot; class=&quot;form__label&quot;&gt;Conteúdo&lt;/label&gt;
+  &lt;textarea id=&quot;textao&quot; placeholder=&quot;Escreva ou cole (⌘ + V) seu texto aqui.&quot; class=&quot;form__input space__16&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;form__field&quot;&gt;
+  &lt;label for=&quot;name&quot; class=&quot;form__label&quot;&gt;Nome de usuário&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;name&quot; placeholder=&quot;ex. João da Silva&quot; class=&quot;form__input space__16&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form__field space__20&quot;&gt;
+  &lt;label for=&quot;textao&quot; class=&quot;form__label&quot;&gt;Conteúdo&lt;/label&gt;
+  &lt;textarea id=&quot;textao&quot; placeholder=&quot;Escreva ou cole (⌘ + V) seu texto aqui.&quot; class=&quot;form__input space__16&quot;&gt;&lt;/textarea&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -391,7 +455,7 @@
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Alert  Button  Cards  Header  Page Banner "
+							data-filter-value=" Alert  Button  Cards  Form  Header  Page Banner "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -419,6 +483,13 @@
 									data-filter-value="Cards"
 								>
 									<span>Cards</span>
+								</a>
+								<a
+									href="#form"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Form"
+								>
+									<span>Form</span>
 								</a>
 								<a
 									href="#header"

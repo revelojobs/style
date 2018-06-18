@@ -1,0 +1,49 @@
+/*
+---
+name: Form
+category: Components
+---
+
+Form is a group of components, including `__field`, `__label`, `__input` sub-components.
+
+```types.html
+<div class="form__field">
+  <label for="name" class="form__label">Nome de usuário</label>
+  <input type="text" id="name" placeholder="ex. João da Silva" class="form__input space__16">
+</div>
+
+<div class="form__field space__20">
+  <label for="textao" class="form__label">Conteúdo</label>
+  <textarea id="textao" placeholder="Escreva ou cole (⌘ + V) seu texto aqui." class="form__input space__16"></textarea>
+</div>
+```
+*/
+
+.form {
+  &__field {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    float: left;
+  }
+
+  &__label {
+    color: $color_shuttle_gray;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  &__input {
+    background-color: $color_plain_white;
+    border: 1px solid $color_mercury;
+    color: $color_fiord;
+    padding: 15px;
+    font-size: 14px;
+    text-align: left;
+
+    &::placeholder {
+      color: $color_gray_chateau;
+      font-style: italic;
+    }
+  }
+}
