@@ -60,14 +60,62 @@
 	</head>
 
 	<body class="acme-body">					<div style="padding: 20px">
-    <div class="alert">Default Alert</div>
-<div class="alert alert--info">Info Alert</div>
-<div class="alert alert--careful">Careful Alert</div>
+    <div class="page-banner">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><div class="alert">Default Alert</div>
-<div class="alert alert--info">Info Alert</div>
-<div class="alert alert--careful">Careful Alert</div></script>
+<div class="page-banner page-banner--advertising">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
+</div>
+
+<div class="page-banner page-banner--careful">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
+</div>
+
+<div class="page-banner page-banner--info">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
+</div>
+</div>
+
+			<script type="text/x-stylemark" data-language="html"><div class="page-banner">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
+</div>
+
+<div class="page-banner page-banner--advertising">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
+</div>
+
+<div class="page-banner page-banner--careful">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
+</div>
+
+<div class="page-banner page-banner--info">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
+</div></script>
 
 		<!--
 			Vanilla JS
@@ -100,10 +148,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-alert-types', []);
+						module = angular.module('stylemark-page-banner-types', []);
 					}
 
-					module.controller('stylemark-alert-types-' + index, function($scope) {
+					module.controller('stylemark-page-banner-types-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

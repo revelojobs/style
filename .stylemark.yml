@@ -12,6 +12,7 @@ theme:
 
 examples:
   css:
+  - docs/dist/stylesheets/base.css
   - dist/stylesheets/main.min.css
 
   js:
@@ -22,6 +23,7 @@ examples:
   bodyTag: <body class="acme-body">
 
   headHtml: |
+    <link type=“text/css” rel=“stylesheet” href=“//fast.fonts.net/cssapi/13f00de1-2633-4238-ad1d-53999b176167.css”/>
     <meta name="google-site-verification" content="52cae…">
     <script>
         window.disableRouting = true;

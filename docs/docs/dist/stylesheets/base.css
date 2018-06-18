@@ -1,0 +1,7 @@
+.acme-body {
+  background-color: #f8f9f9;
+}
+
+.acme-body, .acme-body * {
+  font-family: 'Avenir Next W00', sans-serif;
+}

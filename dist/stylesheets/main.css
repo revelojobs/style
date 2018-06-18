@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .html--disabled-scroll,
 .body--disabled-scroll {
   overflow-y: hidden; }
@@ -277,3 +278,38 @@ Header is a simple component that is always on top of the page.
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+
+/*
+---
+name: Page Banner
+category: Components
+---
+
+Page Banner is a component that encapsulates the title and subtitle of the page.
+
+```types.html
+<div class="page-banner">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
+</div>
+```
+*/
+.page-banner {
+  background-color: #354052;
+  color: #fff;
+  padding: 36px 30px 100px; }
+  .page-banner__title {
+    font-size: 30px; }
+    .page-banner__title small {
+      display: block;
+      font-size: 16px;
+      font-weight: 100;
+      margin-top: 10px; }
+  .page-banner--advertising {
+    background-color: #ffa23a; }
+  .page-banner--careful {
+    background-color: #a573ff; }
+  .page-banner--info {
+    background-color: #39bdda; }

@@ -25,6 +25,7 @@
 									<option value="alert">Alert</option>
 									<option value="button">Button</option>
 									<option value="header">Header</option>
+									<option value="page-banner">Page Banner</option>
 							</optgroup>
 					</select>
 				</form>
@@ -132,7 +133,7 @@
 
 						<div id="header" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Header</h1>
-	<div class="theme-content-element-description"><p>Header is a <code>&lt;div&gt;</code> component that is always on top of the page.</p>
+	<div class="theme-content-element-description"><p>Header is a simple component that is always on top of the page.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -173,6 +174,97 @@
 </div></div>
 </div>
 
+						<div id="page-banner" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Page Banner</h1>
+	<div class="theme-content-element-description"><p>Page Banner is a component that encapsulates the title and subtitle of the page.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="page-banner-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="page-banner-types.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;page-banner&quot;&gt;
+  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+    Dicionário de termos técnicos
+    &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
+  &lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;page-banner page-banner--advertising&quot;&gt;
+  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+    Dicionário de termos técnicos
+    &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
+  &lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;page-banner page-banner--careful&quot;&gt;
+  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+    Dicionário de termos técnicos
+    &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
+  &lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;page-banner page-banner--info&quot;&gt;
+  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+    Dicionário de termos técnicos
+    &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
+  &lt;/h1&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;page-banner&quot;&gt;
+  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+    Dicionário de termos técnicos
+    &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
+  &lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;page-banner page-banner--advertising&quot;&gt;
+  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+    Dicionário de termos técnicos
+    &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
+  &lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;page-banner page-banner--careful&quot;&gt;
+  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+    Dicionário de termos técnicos
+    &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
+  &lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;page-banner page-banner--info&quot;&gt;
+  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+    Dicionário de termos técnicos
+    &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
+  &lt;/h1&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 				</div>
 		</div>
 		<div
@@ -198,7 +290,7 @@
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Alert  Button  Header "
+							data-filter-value=" Alert  Button  Header  Page Banner "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -226,6 +318,13 @@
 									data-filter-value="Header"
 								>
 									<span>Header</span>
+								</a>
+								<a
+									href="#page-banner"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Page Banner"
+								>
+									<span>Page Banner</span>
 								</a>
 						</div>
 			

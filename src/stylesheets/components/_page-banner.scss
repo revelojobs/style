@@ -1,0 +1,67 @@
+/*
+---
+name: Page Banner
+category: Components
+---
+
+Page Banner is a component that encapsulates the title and subtitle of the page.
+
+```types.html
+<div class="page-banner">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
+</div>
+
+<div class="page-banner page-banner--advertising">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
+</div>
+
+<div class="page-banner page-banner--careful">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
+</div>
+
+<div class="page-banner page-banner--info">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
+</div>
+```
+*/
+
+.page-banner {
+  background-color: $color-oxford;
+  color: $color_plain_white;
+  padding: 36px 30px 100px;
+
+  &__title {
+    font-size: 30px;
+
+    small {
+      display: block;
+      font-size: 16px;
+      font-weight: 100;
+      margin-top: 10px;
+    }
+  }
+
+  &--advertising {
+    background-color: $color_neon_carrot;
+  }
+
+  &--careful {
+    background-color: $color_heliotrope;
+  }
+
+  &--info {
+    background-color: $color_scooter;
+  }
+}
