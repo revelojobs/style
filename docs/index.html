@@ -22,6 +22,7 @@
 					<select class="form-control form-control-lg theme-mobile-nav-select">
 						<option disabled selected>Go to…</option>
 							<optgroup label="Components">
+									<option value="alert">Alert</option>
 									<option value="button">Button</option>
 							</optgroup>
 					</select>
@@ -29,6 +30,56 @@
 			</div>
 
 				<div id="category-components" class="theme-content-category">
+						<div id="alert" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Alert</h1>
+	<div class="theme-content-element-description"><p>Alerts can be used with <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags to encapsulate alerts.</p>
+<p>Types of buttons:</p>
+<ul>
+<li>Default: Commonly not used.</li>
+<li>Info: Alert for infos</li>
+<li>Careful: Alert for careful infos</li>
+<li>Fluid: Alert with 100% of width</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="alert-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="alert-types.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;alert&quot;&gt;Default Alert&lt;/div&gt;
+&lt;div class=&quot;alert alert--info&quot;&gt;Info Alert&lt;/div&gt;
+&lt;div class=&quot;alert alert--careful&quot;&gt;Careful Alert&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;alert&quot;&gt;Default Alert&lt;/div&gt;
+&lt;div class=&quot;alert alert--info&quot;&gt;Info Alert&lt;/div&gt;
+&lt;div class=&quot;alert alert--careful&quot;&gt;Careful Alert&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="button" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Button</h1>
 	<div class="theme-content-element-description"><p>Buttons can be used with <code>&lt;a&gt;</code>, and <code>&lt;button&gt;</code> elements.</p>
@@ -103,7 +154,7 @@
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Button "
+							data-filter-value=" Alert  Button "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -111,6 +162,13 @@
 						</h5>
 			
 						<div>
+								<a
+									href="#alert"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Alert"
+								>
+									<span>Alert</span>
+								</a>
 								<a
 									href="#button"
 									class="i-sidebar-list-item theme-sidebar-element"

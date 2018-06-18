@@ -3,9 +3,7 @@ name: "@revelo/style"
 excludeDir:
 - dist
 - docs
-
-assets:
-- dist
+- assets
 
 theme:
   sidebar:
@@ -14,7 +12,7 @@ theme:
 
 examples:
   css:
-  - dist/stylesheets/main.css
+  - dist/stylesheets/main.min.css
 
   js:
   - https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js

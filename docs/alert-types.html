@@ -58,14 +58,14 @@
 	</head>
 
 	<body class="acme-body">					<div style="padding: 20px">
-    <button class="button">Default</button>
-<button class="button button--primary">Primary</button>
-<button class="button" disabled>Disabled</button>
+    <div class="alert">Default Alert</div>
+<div class="alert alert--info">Info Alert</div>
+<div class="alert alert--careful">Careful Alert</div>
 </div>
 
-			<script type="text/x-stylemark" data-language="html"><button class="button">Default</button>
-<button class="button button--primary">Primary</button>
-<button class="button" disabled>Disabled</button></script>
+			<script type="text/x-stylemark" data-language="html"><div class="alert">Default Alert</div>
+<div class="alert alert--info">Info Alert</div>
+<div class="alert alert--careful">Careful Alert</div></script>
 
 		<!--
 			Vanilla JS
@@ -98,10 +98,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-button-types', []);
+						module = angular.module('stylemark-alert-types', []);
 					}
 
-					module.controller('stylemark-button-types-' + index, function($scope) {
+					module.controller('stylemark-alert-types-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

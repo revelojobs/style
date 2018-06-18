@@ -2,6 +2,26 @@
 .body--disabled-scroll {
   overflow-y: hidden; }
 
+/*
+---
+name: Alert
+category: Components
+---
+
+Alerts can be used with `<div>` and `<span>` tags to encapsulate alerts.
+
+Types of buttons:
+- Default: Commonly not used.
+- Info: Alert for infos
+- Careful: Alert for careful infos
+- Fluid: Alert with 100% of width
+
+```types.html
+<div class="alert">Default Alert</div>
+<div class="alert alert--info">Info Alert</div>
+<div class="alert alert--careful">Careful Alert</div>
+```
+*/
 .alert {
   background-color: #f4f5f6;
   font-weight: 500;

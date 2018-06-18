@@ -20,7 +20,6 @@ gulp.task('styles', () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
     .pipe(gulp.dest('./dist/stylesheets'))
-    .pipe(gulp.dest('./docs/assets'))
     .pipe(cleanCSS())
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('./dist/stylesheets'))
