@@ -28,7 +28,21 @@ Page Banner is a component that encapsulates the title and subtitle of the page.
   </h1>
 </div>
 
+<div class="page-banner page-banner--hope">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
+</div>
+
 <div class="page-banner page-banner--info">
+  <h1 class="page-banner__title">
+    Dicionário de termos técnicos
+    <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
+  </h1>
+</div>
+
+<div class="page-banner page-banner--power">
   <h1 class="page-banner__title">
     Dicionário de termos técnicos
     <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
@@ -61,7 +75,15 @@ Page Banner is a component that encapsulates the title and subtitle of the page.
     background-color: $color_heliotrope;
   }
 
+  &--hope {
+    background-color: $color_pastel_green;
+  }
+
   &--info {
     background-color: $color_scooter;
+  }
+
+  &--power {
+    background-color: $color_flamingo;
   }
 }
