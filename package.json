@@ -6,15 +6,19 @@
   "repository": "https://github.com/revelojobs/style",
   "author": "Revelo Devs <devs@rvlo.io>",
   "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/gulp",
+    "docs": "./node_modules/.bin/stylemark -i ./src/stylesheets/components -o ./docs -c ./.stylemark.yml -b 8888"
+  },
   "devDependencies": {
-    "browser-sync": "^2.24.4",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.4",
-    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.3.0",
     "gulp-sass": "^4.0.1",
     "gulp-sass-inline-svg": "^1.0.3",
     "gulp-svgmin": "^1.2.4",
-    "run-sequence": "^2.2.1"
+    "run-sequence": "^2.2.1",
+    "stylemark": "^3.0.1"
   }
 }
