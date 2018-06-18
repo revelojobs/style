@@ -1,3 +1,23 @@
+/*
+---
+name: Button
+category: Components
+---
+
+Buttons can be used with `<a>`, and `<button>` elements.
+
+Types of buttons:
+- Default: Standard button
+- Primary: Provides extra visual red background-color
+- Disabled: Disabled button (with prop or `--disabled` mod
+
+```types.html
+<button class="button">Default</button>
+<button class="button button--primary">Primary</button>
+<button class="button" disabled>Disabled</button>
+```
+*/
+
 .button {
   background-color: transparent;
   border: 0;
@@ -9,6 +29,7 @@
   &:hover {
     background-color: $color_fiord;
     color: $color_plain_white;
+    cursor: pointer;
   }
 
   &--primary {
