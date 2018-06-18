@@ -6,6 +6,13 @@ category: Components
 
 Page Banner is a component that encapsulates the title and subtitle of the page.
 
+You can use the following modifiers:
+- `--advertising`: background color is orange
+- `--careful`: background color is purple
+- `--hope`: background color is green
+- `--info`: background color is blue
+- `--power`: background color is red
+
 ```types.html
 <div class="page-banner">
   <h1 class="page-banner__title">

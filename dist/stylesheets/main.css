@@ -78,6 +78,33 @@ Types of buttons:
 
 /*
 ---
+name: Cards
+category: Components
+---
+
+Card is a simple component.
+
+You can use the `--fluid` modifier that adds `width: 100%`.
+
+```types.html
+<div class="card">
+  Pra chegar ao next level você precisa de comprometimento e muito hardwork.
+  Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
+  vai all-in.
+</div>
+```
+*/
+.card {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px; }
+  .card--fluid {
+    width: 100%; }
+
+/*
+---
 name: Header
 category: Components
 ---
@@ -286,6 +313,13 @@ category: Components
 ---
 
 Page Banner is a component that encapsulates the title and subtitle of the page.
+
+You can use the following modifiers:
+- `--advertising`: background color is orange
+- `--careful`: background color is purple
+- `--hope`: background color is green
+- `--info`: background color is blue
+- `--power`: background color is red
 
 ```types.html
 <div class="page-banner">

@@ -24,6 +24,7 @@
 							<optgroup label="Components">
 									<option value="alert">Alert</option>
 									<option value="button">Button</option>
+									<option value="cards">Cards</option>
 									<option value="header">Header</option>
 									<option value="page-banner">Page Banner</option>
 							</optgroup>
@@ -131,6 +132,54 @@
 </div></div>
 </div>
 
+						<div id="cards" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Cards</h1>
+	<div class="theme-content-element-description"><p>Card is a simple component.</p>
+<p>You can use the <code>--fluid</code> modifier that adds <code>width: 100%</code>.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="cards-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="cards-types.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;card&quot;&gt;
+  Pra chegar ao next level você precisa de comprometimento e muito hardwork.
+  Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
+  vai all-in.
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;card&quot;&gt;
+  Pra chegar ao next level você precisa de comprometimento e muito hardwork.
+  Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
+  vai all-in.
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="header" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Header</h1>
 	<div class="theme-content-element-description"><p>Header is a simple component that is always on top of the page.</p>
@@ -177,6 +226,14 @@
 						<div id="page-banner" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Page Banner</h1>
 	<div class="theme-content-element-description"><p>Page Banner is a component that encapsulates the title and subtitle of the page.</p>
+<p>You can use the following modifiers:</p>
+<ul>
+<li><code>--advertising</code>: background color is orange</li>
+<li><code>--careful</code>: background color is purple</li>
+<li><code>--hope</code>: background color is green</li>
+<li><code>--info</code>: background color is blue</li>
+<li><code>--power</code>: background color is red</li>
+</ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -318,7 +375,7 @@
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Alert  Button  Header  Page Banner "
+							data-filter-value=" Alert  Button  Cards  Header  Page Banner "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -339,6 +396,13 @@
 									data-filter-value="Button"
 								>
 									<span>Button</span>
+								</a>
+								<a
+									href="#cards"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Cards"
+								>
+									<span>Cards</span>
 								</a>
 								<a
 									href="#header"

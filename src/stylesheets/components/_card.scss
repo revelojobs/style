@@ -1,0 +1,29 @@
+/*
+---
+name: Cards
+category: Components
+---
+
+Card is a simple component.
+
+You can use the `--fluid` modifier that adds `width: 100%`.
+
+```types.html
+<div class="card">
+  Pra chegar ao next level você precisa de comprometimento e muito hardwork.
+  Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
+  vai all-in.
+</div>
+```
+*/
+
+.card {
+  background-color: $color_plain_white;
+  border: 1px solid $color_mercury;
+  box-sizing: border-box;
+  padding: 30px;
+
+  &--fluid {
+    width: 100%;
+  }
+}
