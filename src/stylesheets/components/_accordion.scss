@@ -86,6 +86,12 @@ Accordion depends on the following sub-components:
 
   &__content {
     padding: 20px 30px;
+
+    p {
+      color: $color_fiord;
+      font-size: 14px;
+      line-height: 25px;
+    }
   }
 
   &__trigger {

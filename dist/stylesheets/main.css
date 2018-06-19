@@ -151,6 +151,10 @@ Accordion depends on the following sub-components:
     transition: max-height .2s ease-in-out; }
   .accordion__content {
     padding: 20px 30px; }
+    .accordion__content p {
+      color: #3c4d61;
+      font-size: 14px;
+      line-height: 25px; }
   .accordion__trigger {
     cursor: pointer;
     height: 58px;
