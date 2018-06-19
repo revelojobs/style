@@ -25,6 +25,7 @@
 									<option value="alert">Alert</option>
 									<option value="button">Button</option>
 									<option value="cards">Cards</option>
+									<option value="footer">Footer</option>
 									<option value="form">Form</option>
 									<option value="header">Header</option>
 									<option value="page-banner">Page Banner</option>
@@ -140,6 +141,7 @@
 <ul>
 <li><code>--dashed</code>: adds <code>border-style: dashed</code>.</li>
 <li><code>--fluid</code>: adds <code>width: 100%</code>.</li>
+<li><code>--ghost</code>: adds lightweight description to card.</li>
 </ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -183,7 +185,7 @@ Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo
 vai all-in.
 &lt;/div&gt;
 
-&lt;div class=&quot;card card--featured&quot;&gt;
+&lt;div class=&quot;card card--ghost&quot;&gt;
   A definição dos termos técnicos aparecerá aqui. Adicione um texto no campo acima para traduzir!
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;card&quot;&gt;
@@ -198,9 +200,144 @@ Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo
 vai all-in.
 &lt;/div&gt;
 
-&lt;div class=&quot;card card--featured&quot;&gt;
+&lt;div class=&quot;card card--ghost&quot;&gt;
   A definição dos termos técnicos aparecerá aqui. Adicione um texto no campo acima para traduzir!
 &lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="footer" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Footer</h1>
+	<div class="theme-content-element-description"><p>Footer is a simple component with it&#39;s sub-components.</p>
+<p>You can use the following sub-components:</p>
+<ul>
+<li><code>__container</code>: it&#39;s an additional class for <code>container</code>.</li>
+<li><code>__block</code>: separate blocks of menu lists.</li>
+<li><code>__title</code>: list title.</li>
+<li><code>__list</code>: menu list.</li>
+<li><code>__link</code>: link style for <code>&lt;a&gt;</code></li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="footer-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="footer-types.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;footer class=&quot;footer&quot;&gt;
+  &lt;div class=&quot;footer__container&quot;&gt;
+    &lt;div class=&quot;footer__block&quot;&gt;
+      &lt;h2 class=&quot;footer__title&quot;&gt;
+        Candidatos
+      &lt;/h2&gt;
+
+      &lt;ul class=&quot;footer__list&quot;&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Para candidatos&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Depoimentos&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Cadastre-se&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Indique amigos&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Empresas contratando&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;footer__block&quot;&gt;
+      &lt;h2 class=&quot;footer__title&quot;&gt;
+        Empresas
+      &lt;/h2&gt;
+
+      &lt;ul class=&quot;footer__list&quot;&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Nossa nova identidade&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Para empresas&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Cadastre-se&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;footer class=&quot;footer&quot;&gt;
+  &lt;div class=&quot;footer__container&quot;&gt;
+    &lt;div class=&quot;footer__block&quot;&gt;
+      &lt;h2 class=&quot;footer__title&quot;&gt;
+        Candidatos
+      &lt;/h2&gt;
+
+      &lt;ul class=&quot;footer__list&quot;&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Para candidatos&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Depoimentos&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Cadastre-se&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Indique amigos&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Empresas contratando&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;footer__block&quot;&gt;
+      &lt;h2 class=&quot;footer__title&quot;&gt;
+        Empresas
+      &lt;/h2&gt;
+
+      &lt;ul class=&quot;footer__list&quot;&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Nossa nova identidade&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Para empresas&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;footer__item&quot;&gt;
+          &lt;a href=&quot;#&quot; class=&quot;footer__link&quot;&gt;Cadastre-se&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -455,7 +592,7 @@ vai all-in.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Alert  Button  Cards  Form  Header  Page Banner "
+							data-filter-value=" Alert  Button  Cards  Footer  Form  Header  Page Banner "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -483,6 +620,13 @@ vai all-in.
 									data-filter-value="Cards"
 								>
 									<span>Cards</span>
+								</a>
+								<a
+									href="#footer"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Footer"
+								>
+									<span>Footer</span>
 								</a>
 								<a
 									href="#form"

@@ -64,7 +64,7 @@
 
     &::after {
       background-color: $color_viking;
-      background-image: inline-svg('checked');
+      background-image: url( inline-svg('checked', $url: false) );
       background-position: center;
       background-repeat: no-repeat;
       bottom: 0;
