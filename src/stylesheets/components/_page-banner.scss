@@ -12,6 +12,7 @@ You can use the following modifiers:
 - `--hope`: background color is green
 - `--info`: background color is blue
 - `--power`: background color is red
+- `--receiver`: adds `padding-bottom: 100px` to open space for bottom content
 
 ```types.html
 <div class="page-banner">
@@ -61,7 +62,7 @@ You can use the following modifiers:
 .page-banner {
   background-color: $color-oxford;
   color: $color_plain_white;
-  padding: 36px 30px 100px;
+  padding: 36px 30px;
 
   &__title {
     font-size: 30px;
@@ -92,5 +93,9 @@ You can use the following modifiers:
 
   &--power {
     background-color: $color_flamingo;
+  }
+
+  &--receiver {
+    padding-bottom: 100px;
   }
 }
