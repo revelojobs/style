@@ -1,0 +1,71 @@
+/*
+---
+name: Tooltip
+category: Components
+---
+
+Tooltip is a special component that requests the `data-tooltip` for the tooltip content.
+
+```types.html
+<p>
+  Se você não vê a oportunidade, ela passa. Se é pra entrar no jogo, vai all-in.
+  Trabalho é aprendizado, tudo é um só, onelife. Genialidade é fruto de muito hardwork.
+  Ninguém lembra do médio, foque no excelente. A vida acontece de você e não pra você.
+  Walk the <span class="tooltip" data-tooltip="Palavrão não pode">f*ing</span> talk. Genialidade é fruto de muito hardwork.
+</p>
+```
+*/
+
+.tooltip {
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  text-decoration: underline;
+  z-index: 2;
+
+  &::before,
+  &::after {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  &::before {
+    background-color: rgba($color_rhino, .9);
+    bottom: 150%;
+    color: $color_plain_white;
+    content: attr(data-tooltip);
+    font-size: 12px;
+    font-weight: normal;
+    left: 50%;
+    letter-spacing: 0.23px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    margin-left: -80px;
+    padding: 10px;
+    position: absolute;
+    text-align: left;
+  }
+
+  &::after {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgba($color_rhino, .9);
+    bottom: 150%;
+    content: '';
+    font-size: 0;
+    left: 50%;
+    line-height: 0;
+    margin-left: -5px;
+    position: absolute;
+    width: 0;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
