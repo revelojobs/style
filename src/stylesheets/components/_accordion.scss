@@ -1,0 +1,114 @@
+/*
+---
+name: Accordion
+category: Components
+---
+
+Accordion depends on the following sub-components:
+- `__trigger`: as `<input type="checkbox">`
+- `__header`: as `<header>` with title
+- `__body`: for content body
+- `__content`: that encapsulates the content
+
+```example.html
+<div class="accordion">
+  <input type="checkbox" class="accordion__trigger">
+  <header class="accordion__header">
+    GraphQL
+  </header>
+
+  <div class="accordion__body">
+    <div class="accordion__content">
+      <p>
+        Bora pra action. Encare problemas como oportunidades.
+        Quebre padrões e atinja a alta performance em todas as áreas da sua vida.
+        Ninguém lembra do médio, foque no excelente.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="accordion">
+  <input type="checkbox" class="accordion__trigger" checked>
+  <header class="accordion__header">
+    React
+  </header>
+
+  <div class="accordion__body">
+    <div class="accordion__content">
+      <p>
+        Bora pra action. Encare problemas como oportunidades.
+        Quebre padrões e atinja a alta performance em todas as áreas da sua vida.
+        Ninguém lembra do médio, foque no excelente.
+      </p>
+    </div>
+  </div>
+</div>
+```
+*/
+
+.accordion {
+  background: $color_plain_white;
+  border: 1px solid $color_athens_gray;
+  position: relative;
+
+  &__header {
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+    color: #526173;
+    font-size: 16px;
+    height: 58px;
+    padding: 20px 30px;
+    position: relative;
+    transition: border .2s ease-in-out;
+
+    &:after {
+      border-bottom: 1px solid $color_regent_gray;
+      border-right: 1px solid $color_regent_gray;
+      content: '';
+      height: 9px;
+      width: 9px;
+      background-color: transparent;
+      position: absolute;
+      right: 30px;
+      top: 26px;
+      transform: rotate(45deg);
+      transition: transform .2s ease-in-out;
+    }
+  }
+
+  &__body {
+    box-sizing: border-box;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-in-out;
+  }
+
+  &__content {
+    padding: 20px 30px;
+  }
+
+  &__trigger {
+    cursor: pointer;
+    height: 58px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    &:checked {
+      ~ .accordion__header {
+        border-bottom-color: $color_athens_gray;
+
+        &:after {
+          transform: rotate(225deg);
+        }
+      }
+
+      ~ .accordion__body {
+        max-height: 100%;
+      }
+    }
+  }
+}

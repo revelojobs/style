@@ -22,6 +22,7 @@
 					<select class="form-control form-control-lg theme-mobile-nav-select">
 						<option disabled selected>Go to…</option>
 							<optgroup label="Components">
+									<option value="accordion">Accordion</option>
 									<option value="alert">Alert</option>
 									<option value="button">Button</option>
 									<option value="cards">Cards</option>
@@ -35,6 +36,115 @@
 			</div>
 
 				<div id="category-components" class="theme-content-category">
+						<div id="accordion" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Accordion</h1>
+	<div class="theme-content-element-description"><p>Accordion depends on the following sub-components:</p>
+<ul>
+<li><code>__trigger</code>: as <code>&lt;input type=&quot;checkbox&quot;&gt;</code></li>
+<li><code>__header</code>: as <code>&lt;header&gt;</code> with title</li>
+<li><code>__body</code>: for content body</li>
+<li><code>__content</code>: that encapsulates the content</li>
+</ul>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="accordion-example.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="accordion-example.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;accordion&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;accordion__trigger&quot;&gt;
+  &lt;header class=&quot;accordion__header&quot;&gt;
+    GraphQL
+  &lt;/header&gt;
+
+  &lt;div class=&quot;accordion__body&quot;&gt;
+    &lt;div class=&quot;accordion__content&quot;&gt;
+      &lt;p&gt;
+        Bora pra action. Encare problemas como oportunidades.
+        Quebre padrões e atinja a alta performance em todas as áreas da sua vida.
+        Ninguém lembra do médio, foque no excelente.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;accordion&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;accordion__trigger&quot; checked&gt;
+  &lt;header class=&quot;accordion__header&quot;&gt;
+    React
+  &lt;/header&gt;
+
+  &lt;div class=&quot;accordion__body&quot;&gt;
+    &lt;div class=&quot;accordion__content&quot;&gt;
+      &lt;p&gt;
+        Bora pra action. Encare problemas como oportunidades.
+        Quebre padrões e atinja a alta performance em todas as áreas da sua vida.
+        Ninguém lembra do médio, foque no excelente.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;accordion&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;accordion__trigger&quot;&gt;
+  &lt;header class=&quot;accordion__header&quot;&gt;
+    GraphQL
+  &lt;/header&gt;
+
+  &lt;div class=&quot;accordion__body&quot;&gt;
+    &lt;div class=&quot;accordion__content&quot;&gt;
+      &lt;p&gt;
+        Bora pra action. Encare problemas como oportunidades.
+        Quebre padrões e atinja a alta performance em todas as áreas da sua vida.
+        Ninguém lembra do médio, foque no excelente.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;accordion&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;accordion__trigger&quot; checked&gt;
+  &lt;header class=&quot;accordion__header&quot;&gt;
+    React
+  &lt;/header&gt;
+
+  &lt;div class=&quot;accordion__body&quot;&gt;
+    &lt;div class=&quot;accordion__content&quot;&gt;
+      &lt;p&gt;
+        Bora pra action. Encare problemas como oportunidades.
+        Quebre padrões e atinja a alta performance em todas as áreas da sua vida.
+        Ninguém lembra do médio, foque no excelente.
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
 						<div id="alert" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Alert</h1>
 	<div class="theme-content-element-description"><p>Alerts can be used with <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags to encapsulate alerts.</p>
@@ -602,7 +712,7 @@ vai all-in.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Alert  Button  Cards  Footer  Form  Header  Page Banner "
+							data-filter-value=" Accordion  Alert  Button  Cards  Footer  Form  Header  Page Banner "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -610,6 +720,13 @@ vai all-in.
 						</h5>
 			
 						<div>
+								<a
+									href="#accordion"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Accordion"
+								>
+									<span>Accordion</span>
+								</a>
 								<a
 									href="#alert"
 									class="i-sidebar-list-item theme-sidebar-element"

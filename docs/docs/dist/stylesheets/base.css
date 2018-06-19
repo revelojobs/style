@@ -8,6 +8,7 @@
 
 .alert:not(:first-child),
 .card:not(:first-child),
-.page-banner:not(:first-child) {
+.page-banner:not(:first-child),
+.accordion:not(:first-child) {
   margin-top: 15px;
 }
