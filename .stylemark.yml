@@ -7,7 +7,7 @@ excludeDir:
 
 theme:
   sidebar:
-    background: "#354052"
+    background: "#fc4446"
     textColor: "#fff"
 
 examples:
