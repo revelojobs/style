@@ -12,3 +12,8 @@
 .accordion:not(:first-child) {
   margin-top: 15px;
 }
+
+.container {
+  margin-left: 30px;
+  margin-right: 30px;
+}

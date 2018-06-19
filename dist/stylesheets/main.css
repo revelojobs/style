@@ -308,7 +308,7 @@ You can use the following sub-components:
 
 ```types.html
 <footer class="footer">
-  <div class="footer__container">
+  <div class="container footer__container">
     <div class="footer__block">
       <h2 class="footer__title">
         Candidatos
@@ -352,7 +352,7 @@ You can use the following sub-components:
     </div>
   </div>
 
-  <span class="footer__copyright">
+  <span class="container footer__copyright">
     © 2014-2017 CONTRATADO LLC.  Todos os direitos reservados
   </span>
 </footer>
