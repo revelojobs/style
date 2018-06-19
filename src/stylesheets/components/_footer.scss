@@ -12,6 +12,7 @@ You can use the following sub-components:
 - `__title`: list title.
 - `__list`: menu list.
 - `__link`: link style for `<a>`
+- `__copyright`: component that includes text with copyright infos
 
 ```types.html
 <footer class="footer">
@@ -58,6 +59,10 @@ You can use the following sub-components:
       </ul>
     </div>
   </div>
+
+  <span class="footer__copyright">
+    © 2014-2017 CONTRATADO LLC.  Todos os direitos reservados
+  </span>
 </footer>
 ```
 */
@@ -102,5 +107,12 @@ You can use the following sub-components:
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  &__copyright {
+    color: $color_biscay;
+    display: block;
+    font-size: 12px;
+    margin-top: 160px;
   }
 }
