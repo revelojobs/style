@@ -15,6 +15,7 @@ Header is a simple component that is always on top of the page.
 
 .header {
   background-color: $color_plain_white;
+  box-sizing: border-box;
   padding: 20px;
   width: 100%;
 }
