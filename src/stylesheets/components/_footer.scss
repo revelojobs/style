@@ -69,10 +69,12 @@ You can use the following sub-components:
 
 .footer {
   background-color: $color_rhino;
+  margin-top: 20px;
   padding: 80px 0;
 
   &__container {
-    background-image: url( inline-svg('footer-logo', $url: false) );
+    background-image: inline-svg('footer-logo', $url: false);
+    background-position: 15px top;
     background-repeat: no-repeat;
     display: flex;
     padding-left: 80px;
@@ -87,6 +89,7 @@ You can use the following sub-components:
   &__title {
     color: $color_scooter;
     font-size: 14px;
+    font-weight: 300;
     margin: 0;
     text-transform: uppercase;
   }

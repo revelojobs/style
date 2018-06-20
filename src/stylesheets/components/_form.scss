@@ -6,6 +6,10 @@ category: Components
 
 Form is a group of components, including `__field`, `__label`, `__input` sub-components.
 
+The `__field` has the `--fluid` modifier that adds `width: 100%`.
+
+The `__input` has the `--high` modifier that adds `height: 200px`.
+
 ```types.html
 <div class="form__field">
   <label for="name" class="form__label">Nome de usuário</label>
@@ -25,6 +29,10 @@ Form is a group of components, including `__field`, `__label`, `__input` sub-com
     display: flex;
     flex-direction: column;
     float: left;
+
+    &--fluid {
+      width: 100%;
+    }
   }
 
   &__label {
@@ -37,13 +45,27 @@ Form is a group of components, including `__field`, `__label`, `__input` sub-com
     background-color: $color_plain_white;
     border: 1px solid $color_mercury;
     color: $color_fiord;
-    padding: 15px;
     font-size: 14px;
+    letter-spacing: -.16px;
+    line-height: 25px;
+    max-width: 100%;
+    outline: none;
+    padding: 15px;
+    resize: none;
     text-align: left;
+    transition: border .3s ease-in-out;
 
     &::placeholder {
       color: $color_gray_chateau;
       font-style: italic;
+    }
+
+    &:focus {
+      border-color: $color_loblolly;
+    }
+
+    &--high {
+      height: 200px;
     }
   }
 }

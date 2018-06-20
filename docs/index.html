@@ -30,6 +30,7 @@
 									<option value="form">Form</option>
 									<option value="header">Header</option>
 									<option value="page-banner">Page Banner</option>
+									<option value="titles">Titles</option>
 									<option value="tooltip">Tooltip</option>
 							</optgroup>
 					</select>
@@ -253,6 +254,11 @@
 <li><code>--dashed</code>: adds <code>border-style: dashed</code>.</li>
 <li><code>--fluid</code>: adds <code>width: 100%</code>.</li>
 <li><code>--ghost</code>: adds lightweight description to card.</li>
+<li><code>--over-banner</code>: adds margin negative to get over from page-banner.</li>
+</ul>
+<p>And you have the following subs:</p>
+<ul>
+<li><code>__actions</code>: block to add card actions</li>
 </ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -288,6 +294,12 @@
   Pra chegar ao next level você precisa de comprometimento e muito hardwork.
   Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
   vai all-in.
+
+  &lt;div class=&quot;card__actions&quot;&gt;
+    &lt;button class=&quot;button button--primary&quot;&gt;
+      Send
+    &lt;/button&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;card card--dashed&quot;&gt;
@@ -303,6 +315,12 @@ vai all-in.
   Pra chegar ao next level você precisa de comprometimento e muito hardwork.
   Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
   vai all-in.
+
+  &lt;div class=&quot;card__actions&quot;&gt;
+    &lt;button class=&quot;button button--primary&quot;&gt;
+      Send
+    &lt;/button&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;card card--dashed&quot;&gt;
@@ -465,6 +483,8 @@ vai all-in.
 						<div id="form" class="i-library theme-content-element">
 	<h1 class="display-4 theme-content-element-title">Form</h1>
 	<div class="theme-content-element-description"><p>Form is a group of components, including <code>__field</code>, <code>__label</code>, <code>__input</code> sub-components.</p>
+<p>The <code>__field</code> has the <code>--fluid</code> modifier that adds <code>width: 100%</code>.</p>
+<p>The <code>__input</code> has the <code>--high</code> modifier that adds <code>height: 200px</code>.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -603,87 +623,138 @@ vai all-in.
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;page-banner&quot;&gt;
-  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+  &lt;h1 class=&quot;title-page&quot;&gt;
     Dicionário de termos técnicos
     &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
   &lt;/h1&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;page-banner page-banner--advertising&quot;&gt;
-  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+  &lt;h1 class=&quot;title-page&quot;&gt;
     Dicionário de termos técnicos
     &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
   &lt;/h1&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;page-banner page-banner--careful&quot;&gt;
-  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+  &lt;h1 class=&quot;title-page&quot;&gt;
     Dicionário de termos técnicos
     &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
   &lt;/h1&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;page-banner page-banner--hope&quot;&gt;
-  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+  &lt;h1 class=&quot;title-page&quot;&gt;
     Dicionário de termos técnicos
     &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
   &lt;/h1&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;page-banner page-banner--info&quot;&gt;
-  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+  &lt;h1 class=&quot;title-page&quot;&gt;
     Dicionário de termos técnicos
     &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
   &lt;/h1&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;page-banner page-banner--power&quot;&gt;
-  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+  &lt;h1 class=&quot;title-page&quot;&gt;
     Dicionário de termos técnicos
     &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
   &lt;/h1&gt;
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;page-banner&quot;&gt;
-  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+  &lt;h1 class=&quot;title-page&quot;&gt;
     Dicionário de termos técnicos
     &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
   &lt;/h1&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;page-banner page-banner--advertising&quot;&gt;
-  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+  &lt;h1 class=&quot;title-page&quot;&gt;
     Dicionário de termos técnicos
     &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
   &lt;/h1&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;page-banner page-banner--careful&quot;&gt;
-  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+  &lt;h1 class=&quot;title-page&quot;&gt;
     Dicionário de termos técnicos
     &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
   &lt;/h1&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;page-banner page-banner--hope&quot;&gt;
-  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+  &lt;h1 class=&quot;title-page&quot;&gt;
     Dicionário de termos técnicos
     &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
   &lt;/h1&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;page-banner page-banner--info&quot;&gt;
-  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+  &lt;h1 class=&quot;title-page&quot;&gt;
     Dicionário de termos técnicos
     &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
   &lt;/h1&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;page-banner page-banner--power&quot;&gt;
-  &lt;h1 class=&quot;page-banner__title&quot;&gt;
+  &lt;h1 class=&quot;title-page&quot;&gt;
     Dicionário de termos técnicos
     &lt;small&gt;Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!&lt;/small&gt;
   &lt;/h1&gt;
 &lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="titles" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Titles</h1>
+	<div class="theme-content-element-description"><p>Title has the following types: page and section.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="titles-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="titles-types.html"
+                            data-initinview="true"
+                            data-title="Loading…"
+
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;title-page&quot;&gt;
+  Title Page
+&lt;/span&gt;
+
+&lt;span class=&quot;title-section&quot;&gt;
+  Title Section
+&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;title-page&quot;&gt;
+  Title Page
+&lt;/span&gt;
+
+&lt;span class=&quot;title-section&quot;&gt;
+  Title Section
+&lt;/span&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -762,7 +833,7 @@ vai all-in.
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Accordion  Alert  Button  Cards  Footer  Form  Header  Page Banner  Tooltip "
+							data-filter-value=" Accordion  Alert  Button  Cards  Footer  Form  Header  Page Banner  Titles  Tooltip "
 						>
 							<a href="#category-components" class="i-sidebar-list-item">
 								<b>Components</b>
@@ -825,6 +896,13 @@ vai all-in.
 									data-filter-value="Page Banner"
 								>
 									<span>Page Banner</span>
+								</a>
+								<a
+									href="#titles"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Titles"
+								>
+									<span>Titles</span>
 								</a>
 								<a
 									href="#tooltip"

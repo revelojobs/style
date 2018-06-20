@@ -10,12 +10,22 @@ You can use the following modifiers:
 - `--dashed`: adds `border-style: dashed`.
 - `--fluid`: adds `width: 100%`.
 - `--ghost`: adds lightweight description to card.
+- `--over-banner`: adds margin negative to get over from page-banner.
+
+And you have the following subs:
+- `__actions`: block to add card actions
 
 ```types.html
 <div class="card">
   Pra chegar ao next level você precisa de comprometimento e muito hardwork.
   Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
   vai all-in.
+
+  <div class="card__actions">
+    <button class="button button--primary">
+      Send
+    </button>
+  </div>
 </div>
 
 <div class="card card--dashed">
@@ -34,10 +44,21 @@ vai all-in.
   background-color: $color_plain_white;
   border: 1px solid $color_mercury;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   padding: 30px;
 
+  &__actions {
+    border-top: 1px solid $color_mercury;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 100%;
+  }
+
   &--dashed {
-    border-style: dashed;
+    border: 1px dashed $color_loblolly;
   }
 
   &--fluid {
@@ -48,5 +69,9 @@ vai all-in.
     color: $color_regent_gray;
     padding: 60px 30px;
     text-align: center;
+  }
+
+  &--over-banner {
+    margin-top: -68px;
   }
 }

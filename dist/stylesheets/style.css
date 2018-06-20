@@ -170,6 +170,8 @@ Accordion depends on the following sub-components:
                 transform: rotate(225deg); }
     .accordion__trigger:checked ~ .accordion__body {
       max-height: 100%; }
+  .accordion ~ .accordion {
+    margin-top: 12px; }
 
 /*
 ---
@@ -256,12 +258,22 @@ You can use the following modifiers:
 - `--dashed`: adds `border-style: dashed`.
 - `--fluid`: adds `width: 100%`.
 - `--ghost`: adds lightweight description to card.
+- `--over-banner`: adds margin negative to get over from page-banner.
+
+And you have the following subs:
+- `__actions`: block to add card actions
 
 ```types.html
 <div class="card">
   Pra chegar ao next level você precisa de comprometimento e muito hardwork.
   Não adianta ter conhecimento se você não tem action. Se é pra entrar no jogo,
   vai all-in.
+
+  <div class="card__actions">
+    <button class="button button--primary">
+      Send
+    </button>
+  </div>
 </div>
 
 <div class="card card--dashed">
@@ -280,15 +292,35 @@ vai all-in.
   border: 1px solid #e5e5e5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 30px; }
+  .card__actions {
+    border-top: 1px solid #e5e5e5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 100%; }
   .card--dashed {
-    border-style: dashed; }
+    border: 1px dashed #bec3ca; }
   .card--fluid {
     width: 100%; }
   .card--ghost {
     color: #7d8996;
     padding: 60px 30px;
     text-align: center; }
+  .card--over-banner {
+    margin-top: -68px; }
 
 /*
 ---
@@ -360,9 +392,11 @@ You can use the following sub-components:
 */
 .footer {
   background-color: #273a50;
+  margin-top: 20px;
   padding: 80px 0; }
   .footer__container {
-    background-image: url("data:image/svg+xml, %3Csvg width='30' height='34' viewBox='0 0 30 34' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGroup 8%3C/title%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23FFF' d='M0 34h13.548V13H0z'/%3E%3Cpath fill='%23DB3242' d='M13.548 0v13H30V0z'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: "data:image/svg+xml, %3Csvg width='30' height='34' viewBox='0 0 30 34' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGroup 8%3C/title%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23FFF' d='M0 34h13.548V13H0z'/%3E%3Cpath fill='%23DB3242' d='M13.548 0v13H30V0z'/%3E%3C/g%3E%3C/svg%3E";
+    background-position: 15px top;
     background-repeat: no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -373,6 +407,7 @@ You can use the following sub-components:
   .footer__title {
     color: #39bdda;
     font-size: 14px;
+    font-weight: 300;
     margin: 0;
     text-transform: uppercase; }
   .footer__list {
@@ -401,6 +436,10 @@ category: Components
 
 Form is a group of components, including `__field`, `__label`, `__input` sub-components.
 
+The `__field` has the `--fluid` modifier that adds `width: 100%`.
+
+The `__input` has the `--high` modifier that adds `height: 200px`.
+
 ```types.html
 <div class="form__field">
   <label for="name" class="form__label">Nome de usuário</label>
@@ -423,6 +462,8 @@ Form is a group of components, including `__field`, `__label`, `__input` sub-com
       -ms-flex-direction: column;
           flex-direction: column;
   float: left; }
+  .form__field--fluid {
+    width: 100%; }
 
 .form__label {
   color: #273a50;
@@ -433,9 +474,16 @@ Form is a group of components, including `__field`, `__label`, `__input` sub-com
   background-color: #fff;
   border: 1px solid #e5e5e5;
   color: #3c4d61;
-  padding: 15px;
   font-size: 14px;
-  text-align: left; }
+  letter-spacing: -.16px;
+  line-height: 25px;
+  max-width: 100%;
+  outline: none;
+  padding: 15px;
+  resize: none;
+  text-align: left;
+  -webkit-transition: border .3s ease-in-out;
+  transition: border .3s ease-in-out; }
   .form__input::-webkit-input-placeholder {
     color: #a9b0b9;
     font-style: italic; }
@@ -448,6 +496,10 @@ Form is a group of components, including `__field`, `__label`, `__input` sub-com
   .form__input::placeholder {
     color: #a9b0b9;
     font-style: italic; }
+  .form__input:focus {
+    border-color: #bec3ca; }
+  .form__input--high {
+    height: 200px; }
 
 /*
 ---
@@ -469,112 +521,6 @@ Header is a simple component that is always on top of the page.
           box-sizing: border-box;
   padding: 20px;
   width: 100%; }
-
-.modal {
-  background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative; }
-  .modal__title {
-    padding: 20px 35px;
-    width: 100%; }
-  .modal__steps {
-    background-color: #f1f2f4;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0;
-    padding: 25px 20px; }
-  .modal__step {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .modal__step:not(:first-child) {
-      margin-left: 20px; }
-    .modal__step--active .modal__step-index {
-      background-color: #4cc3dd;
-      color: #fff;
-      opacity: 1; }
-    .modal__step--active .modal__step-name {
-      font-weight: 500;
-      opacity: 1; }
-    .modal__step--checked .modal__step-index {
-      background-color: #4cc3dd;
-      color: #fff;
-      opacity: .4; }
-      .modal__step--checked .modal__step-index::after {
-        display: block; }
-  .modal__step-index {
-    background-color: #fff;
-    border: 1px solid #4cc3dd;
-    color: #4cc3dd;
-    font-size: 18px;
-    font-weight: 500;
-    height: 25px;
-    opacity: .4;
-    position: relative;
-    text-align: center;
-    width: 25px; }
-    .modal__step-index::after {
-      background-color: #4cc3dd;
-      background-image: url("data:image/svg+xml, %3Csvg width='20' height='15' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.533 0L6.597 12.043 1.465 6.867 0 8.345 6.596 15h.001L20 1.479 18.535 0z' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E");
-      background-position: center;
-      background-repeat: no-repeat;
-      bottom: 0;
-      content: '';
-      display: none;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%; }
-  .modal__step-name {
-    color: #273a50;
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: 20px;
-    opacity: .4;
-    text-align: left; }
-  .modal__body {
-    padding-top: 30px; }
-  .modal__step-body {
-    display: none;
-    text-align: center; }
-    .modal__step-body--active {
-      display: block; }
-  .modal__step-title {
-    color: #7d8996;
-    display: block;
-    font-size: 16px;
-    line-height: 26px;
-    margin: 0 auto;
-    max-width: 600px;
-    min-height: 54px;
-    padding: 0; }
-    .modal__step-title span {
-      display: block; }
-  .modal__step-image {
-    margin-top: 15px;
-    max-width: 548px; }
-  .modal__actions {
-    bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    left: 0;
-    padding: 0 60px 25px;
-    position: absolute;
-    width: 100%; }
 
 .list__item {
   display: -webkit-box;
@@ -634,6 +580,112 @@ Header is a simple component that is always on top of the page.
             transition-delay: .3s;
     width: 100%; }
 
+.modal {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative; }
+  .modal__title {
+    padding: 20px 35px;
+    width: 100%; }
+  .modal__steps {
+    background-color: #f1f2f4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 25px 20px; }
+  .modal__step {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .modal__step:not(:first-child) {
+      margin-left: 20px; }
+    .modal__step--active .modal__step-index {
+      background-color: #4cc3dd;
+      color: #fff;
+      opacity: 1; }
+    .modal__step--active .modal__step-name {
+      font-weight: 500;
+      opacity: 1; }
+    .modal__step--checked .modal__step-index {
+      background-color: #4cc3dd;
+      color: #fff;
+      opacity: .4; }
+      .modal__step--checked .modal__step-index::after {
+        display: block; }
+  .modal__step-index {
+    background-color: #fff;
+    border: 1px solid #4cc3dd;
+    color: #4cc3dd;
+    font-size: 18px;
+    font-weight: 500;
+    height: 25px;
+    opacity: .4;
+    position: relative;
+    text-align: center;
+    width: 25px; }
+    .modal__step-index::after {
+      background-color: #4cc3dd;
+      background-image: "data:image/svg+xml, %3Csvg width='20' height='15' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.533 0L6.597 12.043 1.465 6.867 0 8.345 6.596 15h.001L20 1.479 18.535 0z' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E";
+      background-position: center;
+      background-repeat: no-repeat;
+      bottom: 0;
+      content: '';
+      display: none;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+  .modal__step-name {
+    color: #273a50;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+    opacity: .4;
+    text-align: left; }
+  .modal__body {
+    padding-top: 30px; }
+  .modal__step-body {
+    display: none;
+    text-align: center; }
+    .modal__step-body--active {
+      display: block; }
+  .modal__step-title {
+    color: #7d8996;
+    display: block;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 auto;
+    max-width: 600px;
+    min-height: 54px;
+    padding: 0; }
+    .modal__step-title span {
+      display: block; }
+  .modal__step-image {
+    margin-top: 15px;
+    max-width: 548px; }
+  .modal__actions {
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    left: 0;
+    padding: 0 60px 25px;
+    position: absolute;
+    width: 100%; }
+
 .overlay {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -672,42 +724,42 @@ You can use the following modifiers:
 
 ```types.html
 <div class="page-banner">
-  <h1 class="page-banner__title">
+  <h1 class="title-page">
     Dicionário de termos técnicos
     <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
   </h1>
 </div>
 
 <div class="page-banner page-banner--advertising">
-  <h1 class="page-banner__title">
+  <h1 class="title-page">
     Dicionário de termos técnicos
     <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
   </h1>
 </div>
 
 <div class="page-banner page-banner--careful">
-  <h1 class="page-banner__title">
+  <h1 class="title-page">
     Dicionário de termos técnicos
     <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
   </h1>
 </div>
 
 <div class="page-banner page-banner--hope">
-  <h1 class="page-banner__title">
+  <h1 class="title-page">
     Dicionário de termos técnicos
     <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
   </h1>
 </div>
 
 <div class="page-banner page-banner--info">
-  <h1 class="page-banner__title">
+  <h1 class="title-page">
     Dicionário de termos técnicos
     <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
   </h1>
 </div>
 
 <div class="page-banner page-banner--power">
-  <h1 class="page-banner__title">
+  <h1 class="title-page">
     Dicionário de termos técnicos
     <small>Tem alguma vaga com palavras desconhecidas? Cole a descrição no campo de texto e nós traduziremos para você. É simples e rápido!</small>
   </h1>
@@ -718,13 +770,6 @@ You can use the following modifiers:
   background-color: #354052;
   color: #fff;
   padding: 36px 30px; }
-  .page-banner__title {
-    font-size: 30px; }
-    .page-banner__title small {
-      display: block;
-      font-size: 16px;
-      font-weight: 100;
-      margin-top: 10px; }
   .page-banner--advertising {
     background-color: #ffa23a; }
   .page-banner--careful {
@@ -795,3 +840,40 @@ Tooltip is a special component that requests the `data-tooltip` for the tooltip 
   .tooltip:hover::before, .tooltip:hover::after {
     opacity: 1;
     visibility: visible; }
+
+/*
+---
+name: Titles
+category: Components
+---
+
+Title has the following types: page and section.
+
+```types.html
+<span class="title-page">
+  Title Page
+</span>
+
+<span class="title-section">
+  Title Section
+</span>
+```
+*/
+.title-page {
+  font-size: 30px;
+  font-weight: 500; }
+  .title-page small {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin: 0;
+    margin-top: 10px;
+    max-width: 810px; }
+
+.title-section {
+  color: #273a50;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase; }
