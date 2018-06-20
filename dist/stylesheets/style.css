@@ -227,7 +227,7 @@ Types of buttons:
   background-color: transparent;
   border: 0;
   color: #3c4d61;
-  font-weight: 600;
+  font-weight: 300;
   padding: 10px 20px;
   -webkit-transition: background-color .1s ease-in-out, color .1s ease-in-out;
   transition: background-color .1s ease-in-out, color .1s ease-in-out; }
