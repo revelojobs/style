@@ -2,7 +2,6 @@
   "name": "@revelojobs/style",
   "version": "0.0.2",
   "description": "The amazing Revelo's styleguide",
-  "main": "index.js",
   "repository": "https://github.com/revelojobs/style",
   "author": "Revelo Devs <devs@rvlo.io>",
   "license": "MIT",

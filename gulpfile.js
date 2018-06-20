@@ -16,7 +16,7 @@ gulp.task('svg', function(){
 })
 
 gulp.task('styles', () => {
-  return gulp.src('./src/stylesheets/main.scss')
+  return gulp.src('./src/stylesheets/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
     .pipe(gulp.dest('./dist/stylesheets'))
