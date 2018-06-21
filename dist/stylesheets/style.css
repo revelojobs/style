@@ -395,7 +395,7 @@ You can use the following sub-components:
   margin-top: 20px;
   padding: 80px 0; }
   .footer__container {
-    background-image: "data:image/svg+xml, %3Csvg width='30' height='34' viewBox='0 0 30 34' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGroup 8%3C/title%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23FFF' d='M0 34h13.548V13H0z'/%3E%3Cpath fill='%23DB3242' d='M13.548 0v13H30V0z'/%3E%3C/g%3E%3C/svg%3E";
+    background-image: url("data:image/svg+xml, %3Csvg width='30' height='34' viewBox='0 0 30 34' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGroup 8%3C/title%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23FFF' d='M0 34h13.548V13H0z'/%3E%3Cpath fill='%23DB3242' d='M13.548 0v13H30V0z'/%3E%3C/g%3E%3C/svg%3E");
     background-position: 15px top;
     background-repeat: no-repeat;
     display: -webkit-box;
@@ -635,7 +635,7 @@ Header is a simple component that is always on top of the page.
     width: 25px; }
     .modal__step-index::after {
       background-color: #4cc3dd;
-      background-image: "data:image/svg+xml, %3Csvg width='20' height='15' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.533 0L6.597 12.043 1.465 6.867 0 8.345 6.596 15h.001L20 1.479 18.535 0z' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E";
+      background-image: url("data:image/svg+xml, %3Csvg width='20' height='15' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.533 0L6.597 12.043 1.465 6.867 0 8.345 6.596 15h.001L20 1.479 18.535 0z' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E");
       background-position: center;
       background-repeat: no-repeat;
       bottom: 0;

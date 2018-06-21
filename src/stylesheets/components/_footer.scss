@@ -73,7 +73,7 @@ You can use the following sub-components:
   padding: 80px 0;
 
   &__container {
-    background-image: inline-svg('footer-logo', $url: false);
+    background-image: inline-svg('footer-logo');
     background-position: 15px top;
     background-repeat: no-repeat;
     display: flex;
