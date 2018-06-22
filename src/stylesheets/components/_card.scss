@@ -11,6 +11,7 @@ You can use the following modifiers:
 - `--fluid`: adds `width: 100%`.
 - `--ghost`: adds lightweight description to card.
 - `--over-banner`: adds margin negative to get over from page-banner.
+- `--spaceless`: less padding.
 
 And you have the following subs:
 - `__actions`: block to add card actions
@@ -73,5 +74,9 @@ vai all-in.
 
   &--over-banner {
     margin-top: -68px;
+  }
+
+  &--spaceless {
+    padding: 15px;
   }
 }
