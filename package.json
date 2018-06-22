@@ -9,6 +9,7 @@
     "start": "./node_modules/.bin/concurrently -k \"npm run watch\" \"npm run docs:dev\"",
     "watch": "./node_modules/.bin/gulp",
     "build": "./node_modules/.bin/gulp build && npm run docs:build",
+    "build:add": "git add ./dist/stylesheets ./docs",
     "docs:dev": "./node_modules/.bin/stylemark -i ./src/stylesheets/components -o ./docs -c ./.stylemark.yml -w ./dist/stylesheets.style.css -b 8888",
     "docs:build": "./node_modules/.bin/stylemark -i ./src/stylesheets/components -o ./docs -c ./.stylemark.yml"
   },
@@ -26,6 +27,7 @@
     "stylemark": "^3.0.1"
   },
   "pre-commit": [
-    "build"
+    "build",
+    "build:add"
   ]
 }

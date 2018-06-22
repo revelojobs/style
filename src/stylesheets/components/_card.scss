@@ -10,7 +10,6 @@ You can use the following modifiers:
 - `--dashed`: adds `border-style: dashed`.
 - `--fluid`: adds `width: 100%`.
 - `--ghost`: adds lightweight description to card.
-- `--over-banner`: adds margin negative to get over from page-banner.
 - `--spaceless`: less padding.
 
 And you have the following subs:
@@ -70,10 +69,6 @@ vai all-in.
     color: $color_regent_gray;
     padding: 60px 30px;
     text-align: center;
-  }
-
-  &--over-banner {
-    margin-top: -68px;
   }
 
   &--spaceless {
