@@ -62,29 +62,46 @@ You can use the following modifiers:
 .page-banner {
   background-color: $color-oxford;
   color: $color_plain_white;
-  padding: 36px 30px;
+  padding: 44px 30px 36px;
+  position: relative;
 
-  &--advertising {
+  &::after {
+    background-color: $color-oxford;
+  }
+
+  &--advertising,
+  &--advertising::after {
     background-color: $color_neon_carrot;
   }
 
-  &--careful {
+  &--careful,
+  &--careful::after {
     background-color: $color_heliotrope;
   }
 
-  &--hope {
+  &--hope,
+  &--hope::after {
     background-color: $color_pastel_green;
   }
 
-  &--info {
+  &--info,
+  &--info::after {
     background-color: $color_scooter;
   }
 
-  &--power {
+  &--power,
+  &--power::after {
     background-color: $color_flamingo;
   }
 
   &--receiver {
-    padding-bottom: 100px;
+    &:after {
+      content: '';
+      bottom: -100px;
+      height: 100px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
   }
 }
