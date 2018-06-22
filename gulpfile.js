@@ -40,11 +40,17 @@ gulp.task('watch', () => {
   gulp.watch('./src/stylesheets/**/*', ['svg', 'styles']);
 });
 
-gulp.task('default', () => {
+gulp.task('build', () => {
   runSequence(
     'svg',
     'styles',
-    'style-helpers',
+    'style-helpers'
+  )
+})
+
+gulp.task('default', () => {
+  runSequence(
+    'build',
     'watch'
   )
 })

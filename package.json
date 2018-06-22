@@ -6,10 +6,14 @@
   "author": "Revelo Devs <devs@rvlo.io>",
   "license": "MIT",
   "scripts": {
-    "build": "./node_modules/.bin/gulp",
-    "docs": "./node_modules/.bin/stylemark -i ./src/stylesheets/components -o ./docs -c ./.stylemark.yml -b 8888"
+    "start": "./node_modules/.bin/concurrently -k \"npm run watch\" \"npm run docs:dev\"",
+    "watch": "./node_modules/.bin/gulp",
+    "build": "./node_modules/.bin/gulp build && npm run docs:build",
+    "docs:dev": "./node_modules/.bin/stylemark -i ./src/stylesheets/components -o ./docs -c ./.stylemark.yml -w ./dist/stylesheets.style.css -b 8888",
+    "docs:build": "./node_modules/.bin/stylemark -i ./src/stylesheets/components -o ./docs -c ./.stylemark.yml"
   },
   "devDependencies": {
+    "concurrently": "^3.6.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.4",
