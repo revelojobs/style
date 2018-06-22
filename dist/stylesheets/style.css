@@ -769,7 +769,7 @@ You can use the following modifiers:
 .page-banner {
   background-color: #354052;
   color: #fff;
-  padding: 44px 30px 36px;
+  padding: 44px 0 36px;
   position: relative; }
   .page-banner::after {
     background-color: #354052; }
