@@ -37,7 +37,14 @@ gulp.task('style-helpers', () => {
 })
 
 gulp.task('watch', () => {
-  gulp.watch('./src/stylesheets/**/*', ['svg', 'styles']);
+  const paths = [
+    './src/stylesheets/**/*',
+    './src/icons/**/*'
+  ];
+
+  gulp.watch(paths, () => {
+    runSequence('svg', 'styles')
+  });
 });
 
 gulp.task('build', () => {
