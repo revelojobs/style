@@ -227,7 +227,7 @@ Types of buttons:
   background-color: transparent;
   border: 0;
   color: #3c4d61;
-  font-weight: 300;
+  font-weight: 301;
   padding: 10px 20px;
   -webkit-transition: background-color .1s ease-in-out, color .1s ease-in-out;
   transition: background-color .1s ease-in-out, color .1s ease-in-out; }
@@ -407,7 +407,7 @@ You can use the following sub-components:
   .footer__title {
     color: #39bdda;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
     text-transform: uppercase; }
   .footer__list {
@@ -865,7 +865,7 @@ Title has the following types: page and section.
   .title-page small {
     display: block;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.5em;
     margin: 0;
     margin-top: 10px;
