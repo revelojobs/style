@@ -325,6 +325,97 @@ vai all-in.
 
 /*
 ---
+name: Features
+category: Components
+---
+
+Features is a block component.
+
+```types.html
+<div class="row talents">
+  <div class="container">
+    <h2 class="features__title">Encontre os melhores talentos para sua empresa</h2>
+
+    <div class="features__list row">
+      <div class="features__block col-md-4">
+        <img src="images/shortlist.svg" alt="Ícone de sua shortlist em 15 segundos." class="features__icon">
+        <h3 class="features__subtitle">Sua shortlist em 15 segundos</h3>
+        <p class="features__description">
+          Conte-nos sobre o perfil desejado e acesse os profissionais que a Revelo selecionou pra você. Novos candidatos todos os dias.
+        </p>
+      </div>
+
+      <div class="features__block col-md-4">
+        <img src="images/click.svg" alt="Ícone de abordagem com um clique." class="features__icon">
+        <h3 class="features__subtitle">Abordagem com um clique</h3>
+        <p class="features__description">
+          Aborde perfis altamente responsivos - taxa de resposta de 93% - e preencha suas vagas com mais agilidade.
+        </p>
+      </div>
+
+      <div class="features__block col-md-4">
+        <img src="images/adapt.svg" alt="Ícone de plataforma adaptativa." class="features__icon">
+        <h3 class="features__subtitle">Plataforma adaptativa</h3>
+        <p class="features__description">
+          Dê o seu feedback e veja como nossa plataforma se adapta às suas preferências. Quanto mais você usa, melhor a Revelo fica.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+*/
+.features {
+  background-color: #fff;
+  padding: 42px 0;
+  text-align: center; }
+  .features__block {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 55px; }
+  .features__title {
+    color: #273a50;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    position: relative;
+    text-align: center; }
+    .features__title::before {
+      background: #fc4446;
+      bottom: 0;
+      content: '';
+      height: 4px;
+      left: -25px;
+      position: absolute;
+      width: 20px; }
+  .features__subtitle {
+    color: #273a50;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 0;
+    text-align: center; }
+  .features__description {
+    color: #3c4d61;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 8px 0 0;
+    text-align: center; }
+  .features__button {
+    display: inline-block;
+    margin-top: 48px; }
+
+/*
+---
 name: Footer
 category: Components
 ---
