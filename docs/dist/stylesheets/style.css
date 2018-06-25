@@ -249,8 +249,7 @@ Types of buttons:
     opacity: .4; }
   .button--static:hover {
     background-color: inherit;
-    color: inherit;
-    cursor: inherit; }
+    color: inherit; }
 
 /*
 ---
@@ -337,7 +336,7 @@ category: Components
 Features is a block component.
 
 ```types.html
-<div class="row talents">
+<div class="row features">
   <div class="container">
     <h2 class="features__title">Encontre os melhores talentos para sua empresa</h2>
 
