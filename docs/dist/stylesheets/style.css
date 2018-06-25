@@ -260,10 +260,11 @@ category: Components
 Card is a simple component.
 
 You can use the following modifiers:
+- `--bordered`: force border on mobile.
 - `--dashed`: adds `border-style: dashed`.
 - `--fluid`: adds `width: 100%`.
 - `--ghost`: adds lightweight description to card.
-- `--spaceless`: less padding.
+- `--fat`: add padding 30px to padding on medium.
 
 And you have the following subs:
 - `__actions`: block to add card actions
@@ -294,7 +295,7 @@ vai all-in.
 */
 .card {
   background-color: #fff;
-  border: 1px solid #e5e5e5;
+  border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -304,7 +305,11 @@ vai all-in.
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px; }
+  padding: 15px; }
+  @media screen and (min-width: 768px) {
+    .card {
+      border: 1px solid #e5e5e5;
+      padding: 30px; } }
   .card__actions {
     border-top: 1px solid #e5e5e5;
     display: -webkit-box;
@@ -316,6 +321,8 @@ vai all-in.
     margin-top: 20px;
     padding-top: 20px;
     width: 100%; }
+  .card--bordered {
+    border: 1px solid #e5e5e5; }
   .card--dashed {
     border: 1px dashed #bec3ca; }
   .card--fluid {
@@ -324,8 +331,9 @@ vai all-in.
     color: #7d8996;
     padding: 60px 30px;
     text-align: center; }
-  .card--spaceless {
-    padding: 15px; }
+  @media screen and (min-width: 768px) {
+    .card--fat {
+      padding: 30px; } }
 
 /*
 ---

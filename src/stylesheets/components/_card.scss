@@ -7,10 +7,11 @@ category: Components
 Card is a simple component.
 
 You can use the following modifiers:
+- `--bordered`: force border on mobile.
 - `--dashed`: adds `border-style: dashed`.
 - `--fluid`: adds `width: 100%`.
 - `--ghost`: adds lightweight description to card.
-- `--spaceless`: less padding.
+- `--fat`: add padding 30px to padding on medium.
 
 And you have the following subs:
 - `__actions`: block to add card actions
@@ -42,11 +43,16 @@ vai all-in.
 
 .card {
   background-color: $color_plain_white;
-  border: 1px solid $color_mercury;
+  border: 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 15px;
+
+  @include medium {
+    border: 1px solid $color_mercury;
+    padding: 30px;
+  }
 
   &__actions {
     border-top: 1px solid $color_mercury;
@@ -55,6 +61,10 @@ vai all-in.
     margin-top: 20px;
     padding-top: 20px;
     width: 100%;
+  }
+
+  &--bordered {
+    border: 1px solid $color_mercury;
   }
 
   &--dashed {
@@ -71,7 +81,9 @@ vai all-in.
     text-align: center;
   }
 
-  &--spaceless {
-    padding: 15px;
+  &--fat {
+    @include medium {
+      padding: 30px;
+    }
   }
 }

@@ -1,6 +1,9 @@
 @import 'vendor/sass-inline-svg';
 
+@import 'variables/breakpoints';
 @import 'variables/colors';
+
+@import 'mixins/medias';
 
 @import 'common/base';
 
