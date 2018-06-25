@@ -219,6 +219,7 @@ Types of buttons:
 
 ```types.html
 <button class="button">Default</button>
+<button class="button button--static">Static</button>
 <button class="button button--primary">Primary</button>
 <button class="button" disabled>Disabled</button>
 ```
@@ -246,6 +247,10 @@ Types of buttons:
     color: inherit;
     cursor: no-drop;
     opacity: .4; }
+  .button--static:hover {
+    background-color: inherit;
+    color: inherit;
+    cursor: inherit; }
 
 /*
 ---
