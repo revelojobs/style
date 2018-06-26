@@ -308,8 +308,7 @@ vai all-in.
   padding: 15px; }
   @media screen and (min-width: 768px) {
     .card {
-      border: 1px solid #e5e5e5;
-      padding: 30px; } }
+      border: 1px solid #e5e5e5; } }
   .card__actions {
     border-top: 1px solid #e5e5e5;
     display: -webkit-box;
